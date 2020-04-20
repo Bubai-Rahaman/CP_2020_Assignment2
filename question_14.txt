@@ -1,0 +1,19 @@
+GSL functions for solving initial value problems:
+
+1. function name: gsl_odeiv2_step_rk4
+
+   API: int gsl_odeiv2_step_apply(gsl_odeiv2_step_rk4*s, double t, double h, double y[], double yerr[],const double dydt_in[], double dydt_out[], const gsl_odeiv2_system*sys)
+   
+   method: Explicit 4th order Runge-Kutta method
+
+2. function name: gsl_odeiv2_step_rk45
+
+	API: int gsl_odeiv2_step_apply(gsl_odeiv2_step_rk45*s,double t, double h, double y[], double yerr[],const double dydt_in[], double dydt_out[], const gsl_odeiv2_system*sys)
+	
+	method: Explicit embedded Runga-Kutta-Fehlberg(4,5) method
+
+3. function name: gsl_odeiv2_step_bsimp
+
+	API: int gsl_odeiv2_step_apply(gsl_odeiv2_step_bsimp*s,double t, double h, double y[], double yerr[],const double dydt_in[], double dydt_out[], const gsl_odeiv2_system*sys)
+	
+	method: Implicit Bulirsch-Stoer method of Bader and Deuflhard

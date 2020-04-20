@@ -1,0 +1,12 @@
+1. What are stiff differential equations?
+Ans: Stif differential equation are those whose exact solutionhas a term of the form 
+exp(-c*t), where c is a large positive constant. This is only a part of solution, called the transient solution. Other part of the solution is called steady-state solution.
+
+2. Example: a) Transient responce of electrical circuit(charging or discharging of capacitor).
+			b) Spring mass system.
+
+3. Method: Backward euler integration method
+
+4. scipy function:
+	a) scipy.integrate.solve_ivp(fun,t_span,y0, method = 'Radau')
+	b) scipy.integrate.solve_ivp(fun,t_span,y0, method = 'BDF')
